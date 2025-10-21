@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { Post } from './post/post';
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -18,7 +19,8 @@ import { Post } from './post/post';
     Esercizio3Component,
     Esercizio4Component,
     Post,
-    CommonModule
+    CommonModule,
+ 
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
@@ -44,6 +46,7 @@ export class App {
     },
 
   ];
+
 }
 
 
