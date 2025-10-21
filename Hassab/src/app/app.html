@@ -8,3 +8,30 @@
 <app-esercizio3></app-esercizio3>
 <hr>
 <app-esercizio4></app-esercizio4>
+
+
+<!--APP COMPONENT-->
+<div style="border:2px solid #222; padding:12px; margin:12px 0;">
+    <h2 style="margin-top:0;">APP COMPONENT (genitore)</h2>
+    <!--Componente1-->
+    <app-componente1></app-componente1>
+</div>
+
+
+<!--APP COMPONENT-->
+<div style="border:2px solid #222; padding:12px; margin:12px 0;">
+<h2 style="margin-top:0;">APP COMPONENT (genitore)</h2>
+<p>Messaggio che voglio inviare al figlio: <strong>{{ messaggio }}</strong></p>
+<!--Componente1-->
+<app-componente1 [testo]="messaggio"></app-componente1>
+</div>
+
+<app-post
+    *ngFor="let p of posts"
+    [titolo]="p.titolo"
+    [testo]="p.testo">
+</app-post>
+
+
+
+
